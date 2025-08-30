@@ -1,0 +1,114 @@
+:root {
+  /* Primary Colors */
+  --orange: #f7931e;
+  --dark-orange: #c5771e;
+  --beige: #fff5e5;
+}
+
+.btn-primary {
+  background-color: var(--orange) !important;
+  color: var(--white) !important;
+}
+
+.rounded {
+  border-radius: 16px !important;
+}
+
+.row-card:hover {
+  border-radius: 16px !important;
+  background-color: var(--beige);
+}
+
+.row-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+a.primary-btn {
+  background-color: var(--orange) !important;
+  border: 1px solid var(--orange) !important;
+  color: var(--white) !important;
+  padding: 16px 24px !important;
+  text-decoration: none !important;
+  border-radius: 16px !important;
+  display: inline-block;
+}
+
+a.primary-btn:hover {
+  background-color: var(--dark-orange) !important;
+  border-color: var(--dark-orange) !important;
+  color: var(--white) !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+pre,
+.pre {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow: scroll;
+}
+
+pre code {
+  display: block;
+  padding: 1.5em 1.5em;
+  white-space: pre;
+  font-size: 0.875rem;
+  line-height: 2;
+}
+
+pre {
+  background-color: #222;
+  color: #ddd;
+  white-space: pre;
+
+  hyphens: none;
+  position: relative;
+}
+
+.active,
+a.active,
+a.active-lang {
+  color: var(--orange) !important;
+}
+
+a.active:hover,
+a.active-lang:hover {
+  color: var(--orange) !important;
+}
+
+button.nav-link,
+button.nav-link:hover {
+  color: black !important;
+}
+
+button.nav-link.active {
+  color: var(--orange) !important;
+}
+
+button.nav-link.active:hover {
+  color: var(--orange) !important;
+}
+
+.navbar-nav .nav-link.active {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -2.65rem !important;
+  left: 25% !important;
+  width: 50% !important;
+  height: 3px !important;
+  background-color: var(--yellow) !important;
+  border-radius: 2px !important;
+  z-index: 2 !important;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}

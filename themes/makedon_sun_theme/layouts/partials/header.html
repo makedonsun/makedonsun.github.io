@@ -1,0 +1,115 @@
+{{ $lang := .Lang }}
+<div class="">
+  <div class="mx-5">
+    <nav class="navbar navbar-expand-lg">
+      <!-- Left: Logo & Title -->
+      <div class="d-flex align-items-center justify-content-center">
+        <a
+          href="{{ .Site.Params.rootURL }}{{ .Lang }}/"
+          class="d-flex align-items-center text-decoration-none me-4"
+          style="color: black !important"
+        >
+          <img src="{{ "img/logos/site_logo.png" | relURL }}" alt="Faculty Logo"
+          class="img-fluid p-2" style="height: 100px;">
+          <h4 class="ms-2 mb-0" style="font-weight: bold">{{ .Site.Title }}</h4>
+        </a>
+      </div>
+
+      <!-- Mobile Toggle Button -->
+      <button
+        class="navbar-toggler d-lg-none"
+        style="border: none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu"
+        aria-controls="mobileMenu"
+      >
+        <img src="{{ "img/icons/Menu.svg" | relURL}}" alt="" />
+        <span class="body-small regular"
+          >{{ if eq $lang "en" }} Meni {{ else }} Мени {{ end }}</span
+        >
+      </button>
+
+      <!-- Desktop Menu -->
+      <div
+        class="collapse navbar-collapse d-none d-lg-flex"
+        id="navbarNavAltMarkup"
+      >
+        <ul class="navbar-nav">
+          {{ $currentPage := . }} {{ range .Site.Menus.main.ByWeight }}
+          <li class="nav-item d-flex align-items-center justify-content-center">
+            <a
+              class="nav-link body-small regular {{ if eq (urls.Parse .URL).Path $currentPage.RelPermalink }}active{{ end }}"
+              href="{{ .URL }}"
+            >
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+
+        <ul class="navbar-nav ms-auto">
+          {{ range $.Site.Home.AllTranslations }}
+          <li class="nav-item">
+            <a
+              class="nav-link body-small {{ if eq .Language.Lang $.Site.Language.Lang }} active-lang bold {{else}} regular {{ end }}"
+              href="{{ .RelPermalink }}"
+            >
+              {{ .Language.LanguageName }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- Mobile Menu Offcanvas -->
+<div class="offcanvas offcanvas-start w-100" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header justify-content-between px-4 pt-4">
+    <!-- Logo & Title -->
+    <div class="d-flex align-items-center">
+      <img src="{{ "img/logos/site_logo.jpeg" | relURL }}" alt="Logo"
+      style="height: 100px; width: 100px;">
+      <span class="ms-2 fw-bold fs-5 body-big bold">{{ .Site.Title }}</span>
+    </div>
+    <!-- Close Button -->
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+
+  <!-- Menu Links -->
+  <div
+    class="offcanvas-body d-flex flex-column justify-content-start align-items-center gap-4"
+  >
+    {{ $currentPage := . }} {{ range .Site.Menus.main.ByWeight }}
+    <a
+      class="nav-link my-2 body-big regular {{ if eq (urls.Parse .URL).Path $currentPage.RelPermalink }}active{{ end }}"
+      href="{{ .URL }}"
+      >{{ .Name }}</a
+    >
+    {{ end }}
+  </div>
+  <hr />
+  <!-- Language Selector + Logo -->
+  <div class="text-center mt-auto py-4">
+    <div class="mb-2">
+      {{ range $.Site.Home.AllTranslations }}
+      <span
+        class="{{ if eq .Language.Lang $.Site.Language.Lang }}active{{ end }} mx-1"
+      >
+        <a
+          href="{{ .RelPermalink }}"
+          class="text-decoration-none {{ if eq .Language.Lang $.Site.Language.Lang }}text-danger fw-bold{{ else }}text-muted{{ end }}"
+          >{{ .Language.Lang | upper }}</a
+        >
+      </span>
+      {{ end }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+baseURL = 'https://makedonsun.github.com/'
+languageCode = 'en-us'
+title = 'Makedon Sun'
+theme = 'makedon_sun_theme'
+relativeURLs = true
+
+[languages]
+  [languages.en]
+    title = 'Makedon Sun'
+    contentDir = 'content/english'
+    languageName = 'EN'
+    weight = 10
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        name = "About Us"
+        url = "/about-us/"
+        weight = 100
+
+      [[languages.en.menus.main]]
+        name = "Our products"
+        url = "/products/"
+        weight = 200
+      
+      [[languages.en.menus.main]]
+        name = "Gallery"
+        url = "/gallery/"
+        weight = 300
+
+      [[languages.en.menus.main]]
+        name = "Blog"
+        url = "/blog/"
+        weight = 400
+
+       [[languages.en.menus.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 500
+
+
+  [languages.mk]
+    title = 'Makedon Sun'
+    contentDir = 'content/macedonian'
+    languageName = 'MK'
+    weight = 10
+    [languages.mk.menus]
+      [[languages.mk.menus.main]]
+        name = "За нас"
+        url = "/mk/about-us/"
+        weight = 100
+
+      [[languages.mk.menus.main]]
+        name = "Наши Производи"
+        url = "/mk/products/"
+        weight = 200
+      
+      [[languages.mk.menus.main]]
+        name = "Галерија"
+        url = "/mk/gallery/"
+        weight = 300
+
+      [[languages.mk.menus.main]]
+        name = "Блог"
+        url = "/mk/blog/"
+        weight = 400
+
+       [[languages.mk.menus.main]]
+        name = "Контакт"
+        url = "/mk/contact/"
+        weight = 500
+         
+
+[markup.goldmark.renderer] 
+  unsafe= true
+  
