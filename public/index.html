@@ -22,7 +22,7 @@
           class="d-flex align-items-center text-decoration-none me-4"
           style="color: black !important"
         >
-          <img src="./img/logos/site_logo.png" alt="Faculty Logo"
+          <img src="./img/logos/site_logo.jpg" alt="Faculty Logo"
           class="img-fluid p-2" style="height: 100px;">
           <h4 class="ms-2 mb-0" style="font-weight: bold">Makedon Sun</h4>
         </a>
@@ -38,9 +38,7 @@
         aria-controls="mobileMenu"
       >
         <img src="./img/icons/Menu.svg" alt="" />
-        <span class="body-small regular"
-          > Meni </span
-        >
+        
       </button>
 
       
@@ -71,27 +69,9 @@
           <li class="nav-item d-flex align-items-center justify-content-center">
             <a
               class="nav-link body-small regular "
-              href="./contact/"
-            >
-              CONTACT
-            </a>
-          </li>
-          
-          <li class="nav-item d-flex align-items-center justify-content-center">
-            <a
-              class="nav-link body-small regular "
               href="./gallery/"
             >
               GALLERY
-            </a>
-          </li>
-          
-          <li class="nav-item d-flex align-items-center justify-content-center">
-            <a
-              class="nav-link body-small regular "
-              href="./blog/"
-            >
-              BLOG
             </a>
           </li>
           
@@ -105,15 +85,6 @@
               href="./"
             >
               EN
-            </a>
-          </li>
-          
-          <li class="nav-item">
-            <a
-              class="nav-link body-small  regular "
-              href="./mk/"
-            >
-              MK
             </a>
           </li>
           
@@ -160,20 +131,8 @@
     
     <a
       class="nav-link my-2 body-big regular "
-      href="./contact/"
-      >CONTACT</a
-    >
-    
-    <a
-      class="nav-link my-2 body-big regular "
       href="./gallery/"
       >GALLERY</a
-    >
-    
-    <a
-      class="nav-link my-2 body-big regular "
-      href="./blog/"
-      >BLOG</a
     >
     
   </div>
@@ -192,45 +151,46 @@
         >
       </span>
       
-      <span
-        class=" mx-1"
-      >
-        <a
-          href="./mk/"
-          class="text-decoration-none text-muted"
-          >MK</a
-        >
-      </span>
-      
     </div>
   </div>
 </div>
 <div id="content" class="">
 
 <div><section
-  class="my-5 d-flex align-items-center justify-content-center position-relative"
+  class="mt-5 d-flex align-items-center justify-content-center position-relative"
   style="
     background-image: url('/img/brewery_interior.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 80px;
-    min-height: 50vh;
+    min-height: 80vh;
     padding: 3rem 1rem;
   "
 >
   <div class="text-center text-white" style="max-width: 90vw">
-    <h1 class="mb-3 fs-3 fs-md-1">Welcome to MAKEDON SUN</h1>
-    <h5 class="lined-text my-4 fs-6 fs-md-5">WINERY & DISTILERY</h5>
+    <h1 class="mb-3 display-1">
+      Welcome to <span style="font-weight: 600">MAKEDON SUN</span>
+    </h1>
+    <h5 class="lined-text my-4 display-5">WINERY & DISTILERY</h5>
     <h5 class="fs-6 fs-md-5"><em>Made from Japanese persimmon</em></h5>
   </div>
 </section>
 
-<section class="my-5">
+<section
+  class="d-flex flex-column align-items-center justify-content-center"
+  style="
+    min-height: 50vh;
+    background-image: url('/img/landing-page/splash.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
   <div class="container px-3 text-center">
     <div class="d-flex flex-column align-items-center justify-content-center">
       <h3 class="mb-4"><strong>FEATURED PRODUCTS</strong></h3>
-      <p class="mb-0">
+      <p class="mb-0 px-3" style="max-width: 700px; margin: 0 auto">
         Crafted with Care. Rooted in Tradition. Inspired by Nature. At Makedon
         Sun, each product reflects our passion for quality and innovation. From
         vineyard to bottle, we combine traditional craftsmanship with the
@@ -245,7 +205,7 @@
   id="wineCarousel"
   class="carousel slide p-5"
   data-bs-ride="carousel"
-  style="background-color: var(--light-gray)"
+  style="background-color: var(--beige)"
 >
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -253,15 +213,21 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/premium.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/premium.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title">ROBRIL PREMIUM WINE</h5>
                 
                 <p class="card-text small text-muted">0.75 L</p>
@@ -271,18 +237,25 @@
               </div>
             </div>
           </div>
+
            
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/vino.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/vino.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title"> ROBRIL CLASSIC WINE</h5>
                 
                 <p class="card-text small text-muted"> 0.75 L</p>
@@ -292,18 +265,25 @@
               </div>
             </div>
           </div>
+
            
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/malo_vino.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/malo_vino.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title"> ROBRIL CLASSIC MINI WINE</h5>
                 
                 <p class="card-text small text-muted"> 0.25 L</p>
@@ -313,6 +293,7 @@
               </div>
             </div>
           </div>
+
            
         </div>
       </div>
@@ -323,15 +304,21 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/nalivno.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/nalivno.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title"> ROBRIL BULK WINE</h5>
                 
                 <p class="card-text small text-muted"> 0.75 L</p>
@@ -341,18 +328,25 @@
               </div>
             </div>
           </div>
+
            
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/rakija_05.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/rakija_05.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title"> BUDŽOVAČA RAKIJA</h5>
                 
                 <p class="card-text small text-muted"> 0.5 L</p>
@@ -362,18 +356,25 @@
               </div>
             </div>
           </div>
+
            
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/rakija_topka.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/rakija_topka.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title"> BUDŽOVAČA RAKIJA MINI</h5>
                 
                 <p class="card-text small text-muted"> 0.2 L</p>
@@ -383,6 +384,7 @@
               </div>
             </div>
           </div>
+
            
         </div>
       </div>
@@ -393,15 +395,21 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/rakija_srpska.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/rakija_srpska.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title"> BUDŽOVAČA RAKIJA MINI</h5>
                 
                 <p class="card-text small text-muted"> 0.2 L</p>
@@ -411,18 +419,25 @@
               </div>
             </div>
           </div>
+
            
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/mastika05.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/mastika05.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title"> PEGOVA MASTIKA</h5>
                 
                 <p class="card-text small text-muted"> 0.5 L</p>
@@ -432,18 +447,25 @@
               </div>
             </div>
           </div>
+
            
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/mastikamala.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/mastikamala.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title"> PEGOVA MASTIKA MINI</h5>
                 
                 <p class="card-text small text-muted"> 0.2 L</p>
@@ -453,6 +475,7 @@
               </div>
             </div>
           </div>
+
            
         </div>
       </div>
@@ -463,15 +486,21 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/1l.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/1l.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title"> CIPCI VINEGAR XL</h5>
                 
                 <p class="card-text small text-muted"> 1 L</p>
@@ -481,18 +510,25 @@
               </div>
             </div>
           </div>
+
            
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/ocet_05.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/ocet_05.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title"> CIPCI VINEGAR LARGE</h5>
                 
                 <p class="card-text small text-muted"> 0.5 L</p>
@@ -502,18 +538,25 @@
               </div>
             </div>
           </div>
+
            
           <div class="col-12 col-md-4 mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="./img/products/ocet_malo.png"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="./img/products/ocet_malo.png"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title"> CIPCI VINEGAR SMALL</h5>
                 
                 <p class="card-text small text-muted"> 0.2 L</p>
@@ -523,6 +566,7 @@
               </div>
             </div>
           </div>
+
            
         </div>
       </div>
@@ -564,6 +608,28 @@
 
 
 
+<style>
+   
+  .card-img-top {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .card-img-top:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+  }
+
+  .card-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-img:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+  }
+</style>
+
 <section class="my-5">
   <div class="container px-3">
     <div class="row align-items-center">
@@ -583,6 +649,9 @@
           your glass, Makedon Sun is a symbol of authentic Macedonian spirit,
           quality, and innovation.
         </p>
+        <a href="./about-us/" class="btn btn-dark btn-lg mt-4" role="button">
+          Read more
+        </a>
       </div>
 
       
@@ -599,16 +668,16 @@
 </section>
 
 <section class="my-5">
-  <div style="background-color: #fff5e5">
+  <div style="background-color: var(--beige)">
     <div class="container px-3">
-      <div class="row align-items-center">
+      <div class="row align-items-center py-5">
         
-        <div class="col-12 col-md-6 text-center mb-4 mb-md-0 py-4">
+        <div class="col-12 col-md-6 text-center mb-4 mb-md-0 py-5">
           <img
             src="./img/brewery_interior.jpg"
             alt="Our Winery"
             class="img-fluid rounded shadow"
-            style="max-width: 350px; width: 100%; height: auto"
+            style="max-width: 450px; width: 100%; height: auto"
           />
         </div>
 
@@ -632,7 +701,7 @@
   </div>
 </section>
 
-<section class="my-5">
+<section class="my-5 py-5">
   <div class="container">
     <div class="row g-4">
       
@@ -689,11 +758,7 @@
   <div
     class="pb-5"
     style="
-      background: linear-gradient(
-        to top,
-        var(--light-gray) 60%,
-        transparent 50%
-      );
+      background: linear-gradient(to top, var(--beige) 70%, transparent 50%);
     "
   >
     <div class="container px-3">
@@ -701,23 +766,29 @@
         
         <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
           <img
-            src="./img/brewery_interior.jpg"
+            src="./img/persimmon_cover.png"
             alt="Our Winery"
             class="img-fluid rounded shadow"
-            style="max-width: 100%; height: auto"
+            style="max-width: 450px; width: 100%; height: auto"
           />
         </div>
 
         
         <div class="col-12 col-md-6">
-          <h2 class="mb-4">Persimmon - Nature's Golden Fruit</h2>
+          <h2 class="my-5">Persimmon - Nature's Golden Fruit</h2>
+          <p class="pt-5">
+            Persimmon (Diospyros kaki), often called the Japanese apple, is not
+            only delicious but also packed with valuable nutrients. Rich in
+            vitamins A, C, and E, as well as antioxidants, potassium, and
+            dietary fiber, this fruit supports the immune system, promotes
+            healthy digestion, and helps protect the body from oxidative stress.
+          </p>
           <p>
-            First in the region and beyond to craft spirits and vinegar from
-            Japanese persimmon. Exclusive persimmon-based spirits — a rare and
-            authentic taste. Traditional methods, modern quality control — the
-            best of both worlds. Grown under the Macedonian sun — rich soil,
-            pure flavors. 100% natural fermentation — no additives, no
-            shortcuts.
+            Its high content of beta-carotene contributes to healthy vision and
+            radiant skin, while the natural antioxidants support heart health
+            and overall vitality. Low in fat and cholesterol-free, persimmon is
+            considered a true superfruit – a perfect balance of taste and
+            wellness in every bite.
           </p>
         </div>
       </div>
@@ -727,6 +798,123 @@
 
 </div>
 
-</div><script src="./js/bootstrap.bundle.min.js"></script>
+</div><footer class="footer">
+  <div class="container">
+    <hr class="my-5" />
+
+    <div class="d-flex flex-column flex-md-row justify-content-between gap-5">
+      
+      <div
+        class="mb-3 d-flex flex-column align-items-center justify-content-center"
+      >
+        <a
+          href="en/"
+          class="d-flex align-items-center text-decoration-none me-4 mb-3"
+        >
+          <img src="./img/logos/site_logo.jpg" alt="Faculty Logo"
+          class="img-fluid p-2" style="height: 100px;">
+          <p class="ms-2 mb-0 body-big bold">Makedon Sun</p>
+        </a>
+      </div>
+
+      
+      <div class="mb-3 d-flex justify-content-center align-items-center">
+        <ul class="list-unstyled">
+           
+          <li class="d-flex align-items-center mb-3">
+            <a
+              class="text-decoration-none body-small regular active"
+              href="./"
+            >
+              HOME
+            </a>
+          </li>
+          
+          <li class="d-flex align-items-center mb-3">
+            <a
+              class="text-decoration-none body-small regular "
+              href="./about-us/"
+            >
+              ABOUT US
+            </a>
+          </li>
+          
+          <li class="d-flex align-items-center mb-3">
+            <a
+              class="text-decoration-none body-small regular "
+              href="./gallery/"
+            >
+              GALLERY
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      
+      <div
+        class="mb-3 d-flex flex-column align-items-start px-3 px-md-0 align-items-md-start"
+      >
+        <div class="d-flex align-items-center mb-3">
+          <img src="./img/icons/location.png" alt="Location icon"
+          class="me-2 icon">
+          <span>Industrial Zone No. 36, Rabrovo, Valandovo, N. Macedonia </span>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <img src="./img/icons/phone.png" alt="Phone icon"
+          class="me-2 icon">
+          <span>(+389) 77 725 337</span>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <img src="./img/icons/email.png" alt="Email icon"
+          class="me-2 icon">
+          <a href="mailto:sunmakedon@gmail.com" class="text-decoration-none"
+            >sunmakedon@gmail.com</a
+          >
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <img src="./img/icons/facebook.png" alt="Facebook icon"
+          class="me-2 icon">
+          <a
+            href="https://www.facebook.com/profile.php?id=61578045789770&__cft__[0]=AZUnbRM_M2wMfEr8ZNC0braOwAXCLP9izRJXDqQydC2f8yBnI0HqUDS8_AGwGWzOJ22Y1zhJcs4lZFK1gQ-IvzsyQg1uT8FWEnKIPzZz_jb4X-w43GHoUYGml6fUlNbpJZMCp9CqVseaIB9sTvsiqbNC6zMp9y-SYcA-Vn0F14pl6g&__tn__=-]K-R"
+            target="_blank"
+            class="text-decoration-none"
+            >Makedon Sun</a
+          >
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <img src="./img/icons/instagram.png" alt="Instagram
+          icon" class="me-2 icon">
+          <a
+            href="https://www.instagram.com/makedon.sun"
+            target="_blank"
+            class="text-decoration-none"
+            >makedon.sun</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-3" />
+
+    
+    <div
+      class="d-flex flex-column my-4 flex-md-row justify-content-between align-items-center small"
+    >
+      <div class="body-xs regular mb-4 mb-md-0">
+        ©2025 · All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+<style>
+  .icon {
+    width: 25px;
+    height: 25px;
+    max-width: 10vw;
+    max-height: 10vw;
+  }
+</style>
+<script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

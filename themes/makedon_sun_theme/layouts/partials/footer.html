@@ -1,0 +1,99 @@
+<footer class="footer">
+  <div class="container">
+    <hr class="my-5" />
+
+    <div class="d-flex flex-column flex-md-row justify-content-between gap-5">
+      <!-- Left Column: Logo and Institution -->
+      <div
+        class="mb-3 d-flex flex-column align-items-center justify-content-center"
+      >
+        <a
+          href="{{ .Site.Params.rootURL }}{{ .Lang }}/"
+          class="d-flex align-items-center text-decoration-none me-4 mb-3"
+        >
+          <img src="{{ "img/logos/site_logo.jpg" | relURL }}" alt="Faculty Logo"
+          class="img-fluid p-2" style="height: 100px;">
+          <p class="ms-2 mb-0 body-big bold">{{.Site.Title}}</p>
+        </a>
+      </div>
+
+      <!-- Middle Column: Navigation -->
+      <div class="mb-3 d-flex justify-content-center align-items-center">
+        <ul class="list-unstyled">
+          {{ $currentPage := . }} {{ range .Site.Menus.main.ByWeight }}
+          <li class="d-flex align-items-center mb-3">
+            <a
+              class="text-decoration-none body-small regular {{ if eq (urls.Parse .URL).Path $currentPage.RelPermalink }}active{{ end }}"
+              href="{{ .URL }}"
+            >
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- Right Column: Contact -->
+      <div
+        class="mb-3 d-flex flex-column align-items-start px-3 px-md-0 align-items-md-start"
+      >
+        <div class="d-flex align-items-center mb-3">
+          <img src="{{ "img/icons/location.png" | relURL }}" alt="Location icon"
+          class="me-2 icon">
+          <span>Industrial Zone No. 36, Rabrovo, Valandovo, N. Macedonia </span>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <img src="{{ "img/icons/phone.png" | relURL }}" alt="Phone icon"
+          class="me-2 icon">
+          <span>(+389) 77 725 337</span>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <img src="{{ "img/icons/email.png" | relURL }}" alt="Email icon"
+          class="me-2 icon">
+          <a href="mailto:sunmakedon@gmail.com" class="text-decoration-none"
+            >sunmakedon@gmail.com</a
+          >
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <img src="{{ "img/icons/facebook.png" | relURL }}" alt="Facebook icon"
+          class="me-2 icon">
+          <a
+            href="https://www.facebook.com/profile.php?id=61578045789770&__cft__[0]=AZUnbRM_M2wMfEr8ZNC0braOwAXCLP9izRJXDqQydC2f8yBnI0HqUDS8_AGwGWzOJ22Y1zhJcs4lZFK1gQ-IvzsyQg1uT8FWEnKIPzZz_jb4X-w43GHoUYGml6fUlNbpJZMCp9CqVseaIB9sTvsiqbNC6zMp9y-SYcA-Vn0F14pl6g&__tn__=-]K-R"
+            target="_blank"
+            class="text-decoration-none"
+            >Makedon Sun</a
+          >
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <img src="{{ "img/icons/instagram.png" | relURL }}" alt="Instagram
+          icon" class="me-2 icon">
+          <a
+            href="https://www.instagram.com/makedon.sun"
+            target="_blank"
+            class="text-decoration-none"
+            >makedon.sun</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-3" />
+
+    <!-- Bottom Row -->
+    <div
+      class="d-flex flex-column my-4 flex-md-row justify-content-between align-items-center small"
+    >
+      <div class="body-xs regular mb-4 mb-md-0">
+        ©2025 · All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+<style>
+  .icon {
+    width: 25px;
+    height: 25px;
+    max-width: 10vw;
+    max-height: 10vw;
+  }
+</style>

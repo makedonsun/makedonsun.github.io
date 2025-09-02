@@ -41,19 +41,6 @@
                 href="http://localhost:1313/blog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
-    <lastmod>2025-07-25T13:30:37+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="mk"
-                href="http://localhost:1313/mk/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/contact/"
-                />
-  </url><url>
     <loc>http://localhost:1313/gallery/</loc>
     <lastmod>2025-07-25T13:30:37+02:00</lastmod>
     <xhtml:link

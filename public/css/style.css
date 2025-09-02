@@ -2,7 +2,10 @@
   /* Primary Colors */
   --orange: #f7931e;
   --dark-orange: #c5771e;
+  --brown: #915c1f;
   --beige: #fff5e5;
+  --card-body: #e0bc97;
+  --dark-beige: #f9e8cc;
   --light-gray: #e8e4e4;
   --dark-gray: #bfbfbf;
 }
@@ -72,12 +75,12 @@ pre {
 .active,
 a.active,
 a.active-lang {
-  color: var(--orange) !important;
+  color: var(--dark-orange) !important;
 }
 
 a.active:hover,
 a.active-lang:hover {
-  color: var(--orange) !important;
+  color: var(--brown) !important;
 }
 
 button.nav-link,
@@ -98,6 +101,14 @@ button.nav-link.active:hover {
   z-index: 1 !important;
 }
 
+.navbar-nav a:hover {
+  color: var(--brown);
+}
+
+.navbar-nav .active {
+  background-color: var(--beige);
+}
+
 .navbar-nav .nav-link.active::after {
   content: "" !important;
   position: absolute !important;
@@ -113,6 +124,10 @@ button.nav-link.active:hover {
 a,
 a:hover {
   text-decoration: none !important;
+}
+
+footer a {
+  color: black;
 }
 
 .lined-text {

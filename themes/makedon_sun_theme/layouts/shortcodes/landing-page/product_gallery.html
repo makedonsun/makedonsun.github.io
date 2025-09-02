@@ -8,7 +8,7 @@ $total (sub $show 1)) $show -}} {{ if eq $type "carousel" }}
   id="wineCarousel"
   class="carousel slide p-5"
   data-bs-ride="carousel"
-  style="background-color: var(--light-gray)"
+  style="background-color: var(--beige)"
 >
   <div class="carousel-inner">
     {{- range $slide := seq 0 (sub $numSlides 1) }}
@@ -19,15 +19,21 @@ $total (sub $show 1)) $show -}} {{ if eq $type "carousel" }}
           $slide $show) $i -}} {{- if lt $index $total }}
           <div class="col-12 col-md-{{ div 12 $show }} mb-3">
             <div
-              class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: var(--dark-gray)"
+              class="card h-100 m-3 d-flex flex-column align-items-end justify-content-between"
+              style="background-color: transparent; border: none"
             >
-              <img
-                src="/img/products/{{ index $images $index | urlize }}"
-                class="card-img-top rounded"
-                alt="Product"
-              />
-              <div class="card-body text-center">
+              <div
+                class="d-flex align-items-center rounded shadow-sm card-img"
+                style="background-color: white"
+              >
+                <img
+                  src="/img/products/{{ index $images $index | urlize }}"
+                  class="card-img-top rounded"
+                  alt="Product"
+                />
+              </div>
+
+              <div class="text-center p-5 w-100">
                 <h5 class="card-title">{{ index $captions $index }}</h5>
                 {{ with index $size $index }}
                 <p class="card-text small text-muted">{{ . }}</p>
@@ -37,6 +43,7 @@ $total (sub $show 1)) $show -}} {{ if eq $type "carousel" }}
               </div>
             </div>
           </div>
+
           {{ end }} {{ end }}
         </div>
       </div>
@@ -76,26 +83,26 @@ $total (sub $show 1)) $show -}} {{ if eq $type "carousel" }}
   </button>
 </div>
 
-{{ else if eq $type "grid" }}
-<div class="container py-5" style="background-color: antiquewhite">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-    {{ range $index, $img := $images }}
-    <div class="col">
-      <div class="card h-100 shadow-sm">
-        <img
-          src="/img/products/{{ $img | urlize }}"
-          class="card-img-top"
-          alt="Product"
-        />
-        <div class="card-body text-center">
-          <h5 class="card-title">{{ index $captions $index }}</h5>
-          {{ with index $descriptions $index }}
-          <p class="card-text small text-muted">{{ . }}</p>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-    {{ end }}
-  </div>
-</div>
 {{ end }}
+
+<style>
+  /* Make images pop and add hover animation */
+  .card-img-top {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .card-img-top:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+  }
+
+  .card-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-img:hover {
+    transform: translateY(-5px); /* lift the card */
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+  }
+</style>

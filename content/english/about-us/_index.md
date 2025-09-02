@@ -10,4 +10,6 @@ draft = true
 
 {{< about-us/third-section >}}
 
+{{< about-us/contact-section >}}
+
 {{< about-us/forth-section >}}
