@@ -17,4 +17,3 @@ Makedon Sun е винарија и дестилерија лоцирана во 
 
 Makedon Sun е симбол на автентичност, посветеност и квалитет — бренд кој ја носи светлината на македонското сонце во секоја капка.
 
-{{< product_gallery type="carousel" show="3" images="1l.png,malo_vino.png,nalivno.png,ocet_05.png,ocet_malo.png,vino.png, mastika05.png,mastikamala.png,premium.png,rakija_05.png,rakija_srpska.png,rakija_topka.png" captions="1l,malo vino,nalivno,ocet 05,ocet malo,Vino, mastika 05, mastika mala, premium, rakija 05, rakija srpska, rakija topka" >}}

@@ -3,6 +3,8 @@
   --orange: #f7931e;
   --dark-orange: #c5771e;
   --beige: #fff5e5;
+  --light-gray: #e8e4e4;
+  --dark-gray: #bfbfbf;
 }
 
 .btn-primary {
@@ -111,4 +113,29 @@ button.nav-link.active:hover {
 a,
 a:hover {
   text-decoration: none !important;
+}
+
+.lined-text {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 0 20px; /* space between text and lines */
+}
+
+.lined-text::before,
+.lined-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px; /* length of line */
+  height: 2px; /* thickness */
+  background: white;
+}
+
+.lined-text::before {
+  left: -110px; /* move line left */
+}
+
+.lined-text::after {
+  right: -110px; /* move line right */
 }

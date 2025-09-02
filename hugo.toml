@@ -12,28 +12,28 @@ relativeURLs = true
     weight = 10
     [languages.en.menus]
       [[languages.en.menus.main]]
-        name = "About Us"
-        url = "/about-us/"
+        name = "HOME"
+        url = "/"
         weight = 100
 
       [[languages.en.menus.main]]
-        name = "Our products"
-        url = "/products/"
+        name = "ABOUT US"
+        url = "/about-us/"
         weight = 200
       
       [[languages.en.menus.main]]
-        name = "Gallery"
-        url = "/gallery/"
+        name = "CONTACT"
+        url = "/contact/"
         weight = 300
 
       [[languages.en.menus.main]]
-        name = "Blog"
-        url = "/blog/"
+        name = "GALLERY"
+        url = "/gallery/"
         weight = 400
 
        [[languages.en.menus.main]]
-        name = "Contact"
-        url = "/contact/"
+        name = "BLOG"
+        url = "/blog/"
         weight = 500
 
 

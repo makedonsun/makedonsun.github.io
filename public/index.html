@@ -18,7 +18,7 @@
       
       <div class="d-flex align-items-center justify-content-center">
         <a
-          href="en/"
+          href="./" 
           class="d-flex align-items-center text-decoration-none me-4"
           style="color: black !important"
         >
@@ -52,37 +52,19 @@
            
           <li class="nav-item d-flex align-items-center justify-content-center">
             <a
+              class="nav-link body-small regular active"
+              href="./"
+            >
+              HOME
+            </a>
+          </li>
+          
+          <li class="nav-item d-flex align-items-center justify-content-center">
+            <a
               class="nav-link body-small regular "
               href="./about-us/"
             >
-              About Us
-            </a>
-          </li>
-          
-          <li class="nav-item d-flex align-items-center justify-content-center">
-            <a
-              class="nav-link body-small regular "
-              href="./products/"
-            >
-              Our products
-            </a>
-          </li>
-          
-          <li class="nav-item d-flex align-items-center justify-content-center">
-            <a
-              class="nav-link body-small regular "
-              href="./gallery/"
-            >
-              Gallery
-            </a>
-          </li>
-          
-          <li class="nav-item d-flex align-items-center justify-content-center">
-            <a
-              class="nav-link body-small regular "
-              href="./blog/"
-            >
-              Blog
+              ABOUT US
             </a>
           </li>
           
@@ -91,7 +73,25 @@
               class="nav-link body-small regular "
               href="./contact/"
             >
-              Contact
+              CONTACT
+            </a>
+          </li>
+          
+          <li class="nav-item d-flex align-items-center justify-content-center">
+            <a
+              class="nav-link body-small regular "
+              href="./gallery/"
+            >
+              GALLERY
+            </a>
+          </li>
+          
+          <li class="nav-item d-flex align-items-center justify-content-center">
+            <a
+              class="nav-link body-small regular "
+              href="./blog/"
+            >
+              BLOG
             </a>
           </li>
           
@@ -147,33 +147,33 @@
   >
      
     <a
+      class="nav-link my-2 body-big regular active"
+      href="./"
+      >HOME</a
+    >
+    
+    <a
       class="nav-link my-2 body-big regular "
       href="./about-us/"
-      >About Us</a
-    >
-    
-    <a
-      class="nav-link my-2 body-big regular "
-      href="./products/"
-      >Our products</a
-    >
-    
-    <a
-      class="nav-link my-2 body-big regular "
-      href="./gallery/"
-      >Gallery</a
-    >
-    
-    <a
-      class="nav-link my-2 body-big regular "
-      href="./blog/"
-      >Blog</a
+      >ABOUT US</a
     >
     
     <a
       class="nav-link my-2 body-big regular "
       href="./contact/"
-      >Contact</a
+      >CONTACT</a
+    >
+    
+    <a
+      class="nav-link my-2 body-big regular "
+      href="./gallery/"
+      >GALLERY</a
+    >
+    
+    <a
+      class="nav-link my-2 body-big regular "
+      href="./blog/"
+      >BLOG</a
     >
     
   </div>
@@ -207,48 +207,56 @@
 </div>
 <div id="content" class="">
 
-
-
-<section
-  class="position-relative text-white text-center"
+<div><section
+  class="my-5"
   style="
-    background-image: url('/img//persimmon_cover.png');
+    background-image: url('/img/brewery_interior.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 900px;
+    border-radius: 150px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
   "
 >
-  <div class="rounded bg-dark bg-opacity-50" style="padding: 100px 200px">
-    
-    <h1 class="">MAKEDON SUN</h1>
-     
-    <p class="mt-3 font-italic">Winery &amp; Distillery from the Heart of Macedonia</p>
-    
-    <a class="mt-3 primary-btn">LEARN MORE</a>
+  <div
+    class="d-flex flex-column align-items-center justify-content-center"
+    style="color: white"
+  >
+    <h1 class="">Welcome to MAKEDON SUN</h1>
+    <h5 class="lined-text my-5">WINERY & DISTILERY</h5>
+    <h5><em>Made from japanese persimmon</em></h5>
   </div>
 </section>
 
+<section
+  class="my-5"
+  style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 250px;
+  "
+>
+  <div class="d-flex flex-column align-items-center justify-content-center">
+    <h3 class="mb-5"><strong>FEATURED PRODUCTS</strong></h3>
+    <p>
+      Crafted with Care. Rooted in Tradition. Inspired by Nature. At Makedon
+      Sun, each product reflects our passion for quality and innovation. From
+      vineyard to bottle, we combine traditional craftsmanship with the richness
+      of Japanese persimmon to offer a truly unique experience.
+    </p>
+  </div>
+</section>
 
-
-<div class="py-5"><div class="text-center"><h4 id="featured-products"><strong>FEATURED PRODUCTS</strong></h4>
-<br>
-<div class="" style="padding-left: 200px; padding-right: 200px">
-Crafted with Care. Rooted in Tradition. Inspired by Nature.<br>
-At Makedon Sun, each product reflects our passion for quality and innovation. From vineyard to bottle, we combine traditional craftsmanship with the richness of Japanese persimmon to offer a truly unique experience.
-</div>
-</div>
-
-<p><br><br></p>
 
 <div
   id="wineCarousel"
   class="carousel slide p-5"
   data-bs-ride="carousel"
-  style="background-color: #fff5e5"
+  style="background-color: var(--light-gray)"
 >
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -257,7 +265,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/premium.png"
@@ -278,7 +286,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/vino.png"
@@ -299,7 +307,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/malo_vino.png"
@@ -327,7 +335,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/nalivno.png"
@@ -348,7 +356,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/rakija_05.png"
@@ -369,7 +377,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/rakija_topka.png"
@@ -397,7 +405,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/rakija_srpska.png"
@@ -418,7 +426,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/mastika05.png"
@@ -439,7 +447,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/mastikamala.png"
@@ -467,7 +475,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/1l.png"
@@ -488,7 +496,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/ocet_05.png"
@@ -509,7 +517,7 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
           <div class="col-12 col-md-4 mb-3">
             <div
               class="card h-100 shadow-sm m-3 d-flex flex-column justify-content-between align-items-center rounded"
-              style="background-color: bisque"
+              style="background-color: var(--dark-gray)"
             >
               <img
                 src="./img/products/ocet_malo.png"
@@ -567,87 +575,145 @@ At Makedon Sun, each product reflects our passion for quality and innovation. Fr
 
 
 
-<p><br><br></p>
-<div class="container px-5">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <h2 class="mb-3">OUR STORY</h2>
-      <p>
-        <br>Rooted in Nature, Refined by Tradition<br><br>
-        Nestled in the sun-drenched valleys of Valandovo, Makedon Sun was born from a deep respect for nature, tradition, and the unique power of the persimmon fruit.
-        What began as a family passion grew into a winery and distillery unlike any other — blending time-honored techniques with modern standards to craft wines, rakija, mastika, and vinegar from the rare Diospyros kaki (Japanese persimmon).
-        Each bottle we produce carries the story of our land: the rich soil, the golden sun, and generations of knowledge passed down with care.
-        From the vineyard to your glass, Makedon Sun is a symbol of authentic Macedonian spirit, quality, and innovation.
-      </p>
-    </div>
-    <div class="col-md-6 text-center p-5">
-      <img src="./img/interior-illuminated-building.jpg" alt="Our Winery" class="img-fluid rounded shadow" style="max-width: 350px"/>
-    </div>
-  </div>
-</div>
-<div style="background-color: #fff5e5">
-<div class="container px-5">
-  <div class="row align-items-center">
-   <div class="col-md-6 text-center p-5">
-      <img src="./img/brewery_interior.jpg" alt="Our Winery" class="img-fluid rounded shadow" style="max-width: 350px"/>
-    </div>
-    <div class="col-md-6">
-      <h2 class="mb-3">WHY CHOOSE US? <br>WHAT MAKES US DIFFERENT?
-</h2>
-      <p>
-        <br>First in the region and beyond to craft spirits and vinegar from Japanese persimmon
-Exclusive persimmon-based spirits — a rare and authentic taste
-Traditional methods, modern quality control — the best of both worlds
-Grown under the Macedonian sun — rich soil, pure flavors
-100% natural fermentation — no additives, no shortcuts
-      </p>
-    </div> 
-  </div>
-</div>
-</div>
-<div class="row m-5">
-  <div class="col-12 col-lg-4 mb-4 d-flex">
-    <div
-      class="row-card p-5 m-3 flex-fill d-flex flex-column justify-content-center align-items-center"
-    >
-      <img src="./img/icons/beer.png" alt="icon" style="width:
-      100px; height: 100px" />
-      <h5 class="mt-5">TRADITIONAL CRAFTSMANSHIP</h5>
-      <p class="mt-5">
-        Every drop is made using authentic recipes and artisanal methods passed
-        down through generations.
-      </p>
+<section>
+  <div class="container px-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="mb-3">OUR STORY</h2>
+        <p>
+          <br />Rooted in Nature, Refined by Tradition<br /><br />
+          Nestled in the sun-drenched valleys of Valandovo, Makedon Sun was born
+          from a deep respect for nature, tradition, and the unique power of the
+          persimmon fruit. What began as a family passion grew into a winery and
+          distillery unlike any other — blending time-honored techniques with
+          modern standards to craft wines, rakija, mastika, and vinegar from the
+          rare Diospyros kaki (Japanese persimmon). Each bottle we produce
+          carries the story of our land: the rich soil, the golden sun, and
+          generations of knowledge passed down with care. From the vineyard to
+          your glass, Makedon Sun is a symbol of authentic Macedonian spirit,
+          quality, and innovation.
+        </p>
+      </div>
+      <div class="col-md-6 text-center p-5">
+        <img
+          src="./img/interior-illuminated-building.jpg"
+          alt="Our Winery"
+          class="img-fluid rounded shadow"
+          style="max-width: 350px"
+        />
+      </div>
     </div>
   </div>
+</section>
 
-  <div class="col-12 col-lg-4 mb-4 d-flex">
-    <div
-      class="row-card p-5 m-3 flex-fill d-flex flex-column justify-content-center align-items-center"
-    >
-      <img src="./img/icons/mandarin.png" alt="icon" style="width:
-      100px; height: 100px" />
-      <h5 class="mt-5">NATURAL ORIGIN</h5>
-      <p class="mt-5">
-        Crafted exclusively from Japanese persimmon — a fruit known for its
-        purity, nutritional value, and natural growth in the Valandovo region.
-      </p>
+<section>
+  <div style="background-color: #fff5e5">
+    <div class="container px-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center p-5">
+          <img
+            src="./img/brewery_interior.jpg"
+            alt="Our Winery"
+            class="img-fluid rounded shadow"
+            style="max-width: 350px"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">WHY CHOOSE US? <br />WHAT MAKES US DIFFERENT?</h2>
+          <p>
+            <br />First in the region and beyond to craft spirits and vinegar
+            from Japanese persimmon Exclusive persimmon-based spirits — a rare
+            and authentic taste Traditional methods, modern quality control —
+            the best of both worlds Grown under the Macedonian sun — rich soil,
+            pure flavors 100% natural fermentation — no additives, no shortcuts
+          </p>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <div class="col-12 col-lg-4 mb-4 d-flex">
-    <div
-      class="row-card p-5 m-3 flex-fill d-flex flex-column justify-content-center align-items-center"
-    >
-      <img src="./img/icons/sun.png" alt="icon" style="width:
-      100px; height: 100px" />
-      <h5 class="mt-5">SYMBOL OF MACEDONIA</h5>
-      <p class="mt-5">
-        Born under the Macedonian sun, each product carries the essence of our
-        land. The sun is our inspiration and the heart of every creation.
-      </p>
+<section>
+  <div class="row m-5">
+    <div class="col-12 col-lg-4 mb-4 d-flex">
+      <div
+        class="row-card p-5 m-3 flex-fill d-flex flex-column justify-content-center align-items-center"
+      >
+        <img src="./img/icons/beer.png" alt="icon" style="width:
+        100px; height: 100px" />
+        <h5 class="mt-5">TRADITIONAL CRAFTSMANSHIP</h5>
+        <p class="mt-5">
+          Every drop is made using authentic recipes and artisanal methods
+          passed down through generations.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 mb-4 d-flex">
+      <div
+        class="row-card p-5 m-3 flex-fill d-flex flex-column justify-content-center align-items-center"
+      >
+        <img src="./img/icons/mandarin.png" alt="icon"
+        style="width: 100px; height: 100px" />
+        <h5 class="mt-5">NATURAL ORIGIN</h5>
+        <p class="mt-5">
+          Crafted exclusively from Japanese persimmon — a fruit known for its
+          purity, nutritional value, and natural growth in the Valandovo region.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 mb-4 d-flex">
+      <div
+        class="row-card p-5 m-3 flex-fill d-flex flex-column justify-content-center align-items-center"
+      >
+        <img src="./img/icons/sun.png" alt="icon" style="width:
+        100px; height: 100px" />
+        <h5 class="mt-5">SYMBOL OF MACEDONIA</h5>
+        <p class="mt-5">
+          Born under the Macedonian sun, each product carries the essence of our
+          land. The sun is our inspiration and the heart of every creation.
+        </p>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+<section>
+  <div
+    style="
+      background: linear-gradient(
+        to top,
+        var(--light-gray) 60%,
+        transparent 50%
+      );
+    "
+    class="pb-5"
+  >
+    <div class="container px-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center p-5">
+          <img
+            src="./img/brewery_interior.jpg"
+            alt="Our Winery"
+            class="img-fluid rounded shadow"
+            style="max-width: 100%"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-5">Persimmon - Nature's Golden Fruit</h2>
+          <p>
+            <br />First in the region and beyond to craft spirits and vinegar
+            from Japanese persimmon Exclusive persimmon-based spirits — a rare
+            and authentic taste Traditional methods, modern quality control —
+            the best of both worlds Grown under the Macedonian sun — rich soil,
+            pure flavors 100% natural fermentation — no additives, no shortcuts
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </div>
 
