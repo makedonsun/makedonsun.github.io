@@ -213,16 +213,16 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
+    min-height: 500px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
     padding: 2rem;
   "
 >
-  <div class="p-5" style="text-align: right; max-width: 500px">
-    <h1 class="">ABOUT US</h1>
-    <p class="">
+  <div class="p-4" style="text-align: right; max-width: 500px; width: 100%">
+    <h1 class="mb-3" style="font-size: clamp(1.5rem, 5vw, 2.5rem)">ABOUT US</h1>
+    <p style="font-size: clamp(0.9rem, 2.5vw, 1.1rem)">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
       inventore magni, rerum est numquam quibusdam dicta sint fuga amet dolores!
       Labore deserunt iure ducimus illum quidem perspiciatis fugit, praesentium
@@ -232,6 +232,7 @@
 </section>
 
 <section
+  class="my-5"
   style="
     background: linear-gradient(
       to left,
@@ -239,13 +240,15 @@
       transparent 20%
     );
   "
-  class="my-5"
 >
-  <div class="container px-5">
+  <div class="container px-3">
     <div class="row align-items-center">
-      <div class="col-md-6">
-        <h2 class="mb-3"><strong>Makedon Sun</strong> - Winery & Distilery</h2>
-        <p>
+      
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <h2 class="mb-3" style="font-size: clamp(1.5rem, 3vw, 2rem)">
+          <strong>Makedon Sun</strong> - Winery & Distillery
+        </h2>
+        <p style="font-size: clamp(0.9rem, 2.2vw, 1rem)">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
           beatae officiis ut! Soluta, illum voluptas quos explicabo nulla
           dolorem corrupti porro optio beatae culpa magni deleniti commodi totam
@@ -253,19 +256,21 @@
           aliquid exercitationem quos, consequatur ex laudantium eius ea eaque,
           repudiandae, odit aut.
         </p>
-        <p>
+        <p style="font-size: clamp(0.9rem, 2.2vw, 1rem)">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem veniam
           earum delectus rerum, aut aperiam deleniti tempore quibusdam quasi cum
           sapiente cumque totam obcaecati, placeat, laborum magnam eligendi a
           similique.
         </p>
       </div>
-      <div class="col-md-6 text-center p-5">
+
+      
+      <div class="col-12 col-md-6 text-center py-4">
         <img
           src="../img/brewery_interior.jpg"
           alt="Our Winery"
           class="img-fluid rounded shadow"
-          style="max-width: 100%"
+          style="max-width: 100%; height: auto"
         />
       </div>
     </div>
@@ -274,6 +279,7 @@
 
 <section>
   <div
+    class="mb-5"
     style="
       background: linear-gradient(
         to right,
@@ -281,21 +287,25 @@
         transparent 30%
       );
     "
-    class="mb-5"
   >
-    <div class="container px-5">
+    <div class="container px-3">
       <div class="row align-items-center">
-        <div class="col-md-6 text-center p-5">
+        
+        <div class="col-12 col-md-6 text-center mb-4 mb-md-0 py-4">
           <img
             src="../img/about-us/steel-tanks.jpg"
             alt="Our Winery"
             class="img-fluid rounded shadow"
-            style="max-width: 100%"
+            style="max-width: 100%; height: auto"
           />
         </div>
-        <div class="col-md-6 text-end">
-          <h2 class="mb-3">Lorem, ipsum dolor.</h2>
-          <p>
+
+        
+        <div class="col-12 col-md-6 text-md-end text-center">
+          <h2 class="mb-3" style="font-size: clamp(1.5rem, 3vw, 2rem)">
+            Lorem, ipsum dolor.
+          </h2>
+          <p style="font-size: clamp(0.9rem, 2.2vw, 1rem)">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
             assumenda aliquid recusandae aut ea consequatur nobis enim! Quidem
             voluptatum ipsam blanditiis odit modi commodi tempora! Mollitia
@@ -308,27 +318,30 @@
 </section>
 
 <section
+  class="mt-5"
   style="
     background: linear-gradient(to top, var(--light-gray) 70%, transparent 50%);
   "
-  class="mt-5"
 >
-  <div class="container px-5">
+  <div class="container px-3">
     <div class="row align-items-center">
-      <div class="col-md-6 text-end p-5">
+      
+      <div class="col-12 col-md-6 text-center text-md-end mb-4 mb-md-0 p-4">
         <img
           src="../img/about-us/machine.jpg"
           alt="Our Winery"
           class="img-fluid rounded shadow"
-          style="max-width: 70%"
+          style="max-width: 70%; height: auto"
         />
       </div>
-      <div class="col-md-6 text-start p-5">
+
+      
+      <div class="col-12 col-md-6 text-center text-md-start p-4">
         <img
           src="../img/about-us/abandoned-building.jpg"
           alt="Our Winery"
           class="img-fluid rounded shadow"
-          style="max-width: 70%"
+          style="max-width: 70%; height: auto"
         />
       </div>
     </div>

@@ -208,46 +208,35 @@
 <div id="content" class="">
 
 <div><section
-  class="my-5"
+  class="my-5 d-flex align-items-center justify-content-center position-relative"
   style="
     background-image: url('/img/brewery_interior.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 150px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 80px;
+    min-height: 50vh;
+    padding: 3rem 1rem;
   "
 >
-  <div
-    class="d-flex flex-column align-items-center justify-content-center"
-    style="color: white"
-  >
-    <h1 class="">Welcome to MAKEDON SUN</h1>
-    <h5 class="lined-text my-5">WINERY & DISTILERY</h5>
-    <h5><em>Made from japanese persimmon</em></h5>
+  <div class="text-center text-white" style="max-width: 90vw">
+    <h1 class="mb-3 fs-3 fs-md-1">Welcome to MAKEDON SUN</h1>
+    <h5 class="lined-text my-4 fs-6 fs-md-5">WINERY & DISTILERY</h5>
+    <h5 class="fs-6 fs-md-5"><em>Made from Japanese persimmon</em></h5>
   </div>
 </section>
 
-<section
-  class="my-5"
-  style="
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 250px;
-  "
->
-  <div class="d-flex flex-column align-items-center justify-content-center">
-    <h3 class="mb-5"><strong>FEATURED PRODUCTS</strong></h3>
-    <p>
-      Crafted with Care. Rooted in Tradition. Inspired by Nature. At Makedon
-      Sun, each product reflects our passion for quality and innovation. From
-      vineyard to bottle, we combine traditional craftsmanship with the richness
-      of Japanese persimmon to offer a truly unique experience.
-    </p>
+<section class="my-5">
+  <div class="container px-3 text-center">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <h3 class="mb-4"><strong>FEATURED PRODUCTS</strong></h3>
+      <p class="mb-0">
+        Crafted with Care. Rooted in Tradition. Inspired by Nature. At Makedon
+        Sun, each product reflects our passion for quality and innovation. From
+        vineyard to bottle, we combine traditional craftsmanship with the
+        richness of Japanese persimmon to offer a truly unique experience.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -575,13 +564,14 @@
 
 
 
-<section>
-  <div class="container px-5">
+<section class="my-5">
+  <div class="container px-3">
     <div class="row align-items-center">
-      <div class="col-md-6">
+      
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
         <h2 class="mb-3">OUR STORY</h2>
         <p>
-          <br />Rooted in Nature, Refined by Tradition<br /><br />
+          Rooted in Nature, Refined by Tradition<br /><br />
           Nestled in the sun-drenched valleys of Valandovo, Makedon Sun was born
           from a deep respect for nature, tradition, and the unique power of the
           persimmon fruit. What began as a family passion grew into a winery and
@@ -594,38 +584,47 @@
           quality, and innovation.
         </p>
       </div>
-      <div class="col-md-6 text-center p-5">
+
+      
+      <div class="col-12 col-md-6 text-center">
         <img
           src="./img/interior-illuminated-building.jpg"
           alt="Our Winery"
           class="img-fluid rounded shadow"
-          style="max-width: 350px"
+          style="max-width: 350px; width: 100%; height: auto"
         />
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="my-5">
   <div style="background-color: #fff5e5">
-    <div class="container px-5">
+    <div class="container px-3">
       <div class="row align-items-center">
-        <div class="col-md-6 text-center p-5">
+        
+        <div class="col-12 col-md-6 text-center mb-4 mb-md-0 py-4">
           <img
             src="./img/brewery_interior.jpg"
             alt="Our Winery"
             class="img-fluid rounded shadow"
-            style="max-width: 350px"
+            style="max-width: 350px; width: 100%; height: auto"
           />
         </div>
-        <div class="col-md-6">
-          <h2 class="mb-3">WHY CHOOSE US? <br />WHAT MAKES US DIFFERENT?</h2>
+
+        
+        <div class="col-12 col-md-6">
+          <h2 class="mb-3">
+            WHY CHOOSE US?<br />
+            WHAT MAKES US DIFFERENT?
+          </h2>
           <p>
-            <br />First in the region and beyond to craft spirits and vinegar
-            from Japanese persimmon Exclusive persimmon-based spirits — a rare
-            and authentic taste Traditional methods, modern quality control —
-            the best of both worlds Grown under the Macedonian sun — rich soil,
-            pure flavors 100% natural fermentation — no additives, no shortcuts
+            First in the region and beyond to craft spirits and vinegar from
+            Japanese persimmon. Exclusive persimmon-based spirits — a rare and
+            authentic taste. Traditional methods, modern quality control — the
+            best of both worlds. Grown under the Macedonian sun — rich soil,
+            pure flavors. 100% natural fermentation — no additives, no
+            shortcuts.
           </p>
         </div>
       </div>
@@ -633,54 +632,62 @@
   </div>
 </section>
 
-<section>
-  <div class="row m-5">
-    <div class="col-12 col-lg-4 mb-4 d-flex">
-      <div
-        class="row-card p-5 m-3 flex-fill d-flex flex-column justify-content-center align-items-center"
-      >
-        <img src="./img/icons/beer.png" alt="icon" style="width:
-        100px; height: 100px" />
-        <h5 class="mt-5">TRADITIONAL CRAFTSMANSHIP</h5>
-        <p class="mt-5">
-          Every drop is made using authentic recipes and artisanal methods
-          passed down through generations.
-        </p>
+<section class="my-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      <div class="col-12 col-lg-4 d-flex">
+        <div
+          class="row-card flex-fill d-flex flex-column justify-content-center align-items-center p-4 text-center"
+        >
+          <img src="./img/icons/beer.png" alt="icon"
+          class="img-fluid" style="max-width: 100px; height: auto;" />
+          <h5 class="mt-4">TRADITIONAL CRAFTSMANSHIP</h5>
+          <p class="mt-3">
+            Every drop is made using authentic recipes and artisanal methods
+            passed down through generations.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="col-12 col-lg-4 mb-4 d-flex">
-      <div
-        class="row-card p-5 m-3 flex-fill d-flex flex-column justify-content-center align-items-center"
-      >
-        <img src="./img/icons/mandarin.png" alt="icon"
-        style="width: 100px; height: 100px" />
-        <h5 class="mt-5">NATURAL ORIGIN</h5>
-        <p class="mt-5">
-          Crafted exclusively from Japanese persimmon — a fruit known for its
-          purity, nutritional value, and natural growth in the Valandovo region.
-        </p>
+      
+      <div class="col-12 col-lg-4 d-flex">
+        <div
+          class="row-card flex-fill d-flex flex-column justify-content-center align-items-center p-4 text-center"
+        >
+          <img src="./img/icons/mandarin.png" alt="icon"
+          class="img-fluid" style="max-width: 100px; height: auto;" />
+          <h5 class="mt-4">NATURAL ORIGIN</h5>
+          <p class="mt-3">
+            Crafted exclusively from Japanese persimmon — a fruit known for its
+            purity, nutritional value, and natural growth in the Valandovo
+            region.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="col-12 col-lg-4 mb-4 d-flex">
-      <div
-        class="row-card p-5 m-3 flex-fill d-flex flex-column justify-content-center align-items-center"
-      >
-        <img src="./img/icons/sun.png" alt="icon" style="width:
-        100px; height: 100px" />
-        <h5 class="mt-5">SYMBOL OF MACEDONIA</h5>
-        <p class="mt-5">
-          Born under the Macedonian sun, each product carries the essence of our
-          land. The sun is our inspiration and the heart of every creation.
-        </p>
+      
+      <div class="col-12 col-lg-4 d-flex">
+        <div
+          class="row-card flex-fill d-flex flex-column justify-content-center align-items-center p-4 text-center"
+        >
+          <img src="./img/icons/sun.png" alt="icon"
+          class="img-fluid" style="max-width: 100px; height: auto;" />
+          <h5 class="mt-4">SYMBOL OF MACEDONIA</h5>
+          <p class="mt-3">
+            Born under the Macedonian sun, each product carries the essence of
+            our land. The sun is our inspiration and the heart of every
+            creation.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="">
   <div
+    class="pb-5"
     style="
       background: linear-gradient(
         to top,
@@ -688,26 +695,29 @@
         transparent 50%
       );
     "
-    class="pb-5"
   >
-    <div class="container px-5">
+    <div class="container px-3">
       <div class="row align-items-center">
-        <div class="col-md-6 text-center p-5">
+        
+        <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
           <img
             src="./img/brewery_interior.jpg"
             alt="Our Winery"
             class="img-fluid rounded shadow"
-            style="max-width: 100%"
+            style="max-width: 100%; height: auto"
           />
         </div>
-        <div class="col-md-6">
-          <h2 class="mb-5">Persimmon - Nature's Golden Fruit</h2>
+
+        
+        <div class="col-12 col-md-6">
+          <h2 class="mb-4">Persimmon - Nature's Golden Fruit</h2>
           <p>
-            <br />First in the region and beyond to craft spirits and vinegar
-            from Japanese persimmon Exclusive persimmon-based spirits — a rare
-            and authentic taste Traditional methods, modern quality control —
-            the best of both worlds Grown under the Macedonian sun — rich soil,
-            pure flavors 100% natural fermentation — no additives, no shortcuts
+            First in the region and beyond to craft spirits and vinegar from
+            Japanese persimmon. Exclusive persimmon-based spirits — a rare and
+            authentic taste. Traditional methods, modern quality control — the
+            best of both worlds. Grown under the Macedonian sun — rich soil,
+            pure flavors. 100% natural fermentation — no additives, no
+            shortcuts.
           </p>
         </div>
       </div>
