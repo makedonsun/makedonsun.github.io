@@ -32,36 +32,26 @@ relativeURLs = true
       #   weight = 400
 
 
-  # [languages.mk]
-  #   title = 'Makedon Sun'
-  #   contentDir = 'content/macedonian'
-  #   languageName = 'MK'
-  #   weight = 10
-  #   [languages.mk.menus]
-  #     [[languages.mk.menus.main]]
-  #       name = "За нас"
-  #       url = "/mk/about-us/"
-  #       weight = 100
+  [languages.mk]
+    title = 'Makedon Sun'
+    contentDir = 'content/macedonian'
+    languageName = 'MK'
+    weight = 10
+    [languages.mk.menus]
+      [[languages.mk.menus.main]]
+        name = "ДОМА"
+        url = "/mk/"
+        weight = 100
 
-  #     [[languages.mk.menus.main]]
-  #       name = "Наши Производи"
-  #       url = "/mk/products/"
-  #       weight = 200
+      [[languages.mk.menus.main]]
+         name = "ЗА НАС"
+        url = "/mk/about-us/"
+        weight = 200
       
-  #     [[languages.mk.menus.main]]
-  #       name = "Галерија"
-  #       url = "/mk/gallery/"
-  #       weight = 300
-
-  #     [[languages.mk.menus.main]]
-  #       name = "Блог"
-  #       url = "/mk/blog/"
-  #       weight = 400
-
-  #      [[languages.mk.menus.main]]
-  #       name = "Контакт"
-  #       url = "/mk/contact/"
-  #       weight = 500
+      [[languages.mk.menus.main]]
+        name = "ГАЛЕРИЈА"
+        url = "/mk/gallery/"
+        weight = 300
          
 
 [markup.goldmark.renderer] 

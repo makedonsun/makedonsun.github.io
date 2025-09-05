@@ -3,6 +3,10 @@
   style="background-color: var(--light-gray)"
 >
   <div class="text-center">
+    {{ if eq .Site.Language.Lang "en" }}
     <p><strong>A journey through moments captured in every drop.</strong></p>
+    {{ end }} {{ if eq .Site.Language.Lang "mk" }}
+    <p><strong>Патување низ моменти опфатено во секоја капка.</strong></p>
+    {{ end }}
   </div>
 </section>

@@ -37,8 +37,6 @@ $total (sub $show 1)) $show -}} {{ if eq $type "carousel" }}
                 <h5 class="card-title">{{ index $captions $index }}</h5>
                 {{ with index $size $index }}
                 <p class="card-text small text-muted">{{ . }}</p>
-                {{ end }} {{ with index $descriptions $index }}
-                <p class="card-text small text-muted">{{ . }}</p>
                 {{ end }}
               </div>
             </div>

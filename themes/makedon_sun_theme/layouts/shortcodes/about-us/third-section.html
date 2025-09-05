@@ -1,14 +1,5 @@
 <section>
-  <div
-    class="mb-5"
-    style="
-      background: linear-gradient(
-        to right,
-        var(--light-gray) 35%,
-        transparent 30%
-      );
-    "
-  >
+  <div class="mb-5 gradient-section-left">
     <div class="container px-3 py-5">
       <div class="row align-items-center">
         <!-- Image Column -->
@@ -22,14 +13,13 @@
         </div>
 
         <!-- Text Column -->
-        <div class="col-12 col-md-6 text-center text-md-end">
+        <div class="col-12 col-md-6 text-start">
+          {{ if eq .Site.Language.Lang "en" }}
           <h2 class="mb-3" style="font-size: clamp(1.5rem, 3vw, 2rem)">
             Our product portfolio includes:
           </h2>
-
-          <!-- Styled List -->
           <ul
-            class="list-unstyled d-flex flex-column gap-2"
+            class="d-flex flex-column gap-2"
             style="font-size: clamp(0.9rem, 2.2vw, 1rem)"
           >
             <li>Premium wines with a modern and elegant design</li>
@@ -39,7 +29,6 @@
             </li>
             <li>Persimmon vinegar – the only one of its kind in Europe</li>
           </ul>
-
           <p style="font-size: clamp(0.9rem, 2.2vw, 1rem)" class="pt-4 pt-md-5">
             Our mission is to bring the power of nature in every drop, offering
             consumers natural, high-quality, and authentic beverages that tell
@@ -50,8 +39,47 @@
             and natural beverages who are looking for more than just a drink –
             they are looking for an experience.
           </p>
+          {{ end }} {{ if eq .Site.Language.Lang "mk" }}
+          <h2 class="mb-3" style="font-size: clamp(1.5rem, 3vw, 2rem)">
+            Нашето производно портфолио вклучува:
+          </h2>
+          <ul
+            class="list-unstyled d-flex flex-column gap-2"
+            style="font-size: clamp(0.9rem, 2.2vw, 1rem)"
+          >
+            <li>Премиум вина со модерен и елегантен дизајн</li>
+            <li>Ракија со автентичен македонски карактер</li>
+            <li>
+              Мастика како симбол на традицијата, изработена на современ начин
+            </li>
+            <li>Оцет од јапонска јаболка – природен и богат со арома</li>
+          </ul>
+          <p style="font-size: clamp(0.9rem, 2.2vw, 1rem)" class="pt-4 pt-md-5">
+            Нашата мисија е да ја донесеме моќта на природата во секоја капка,
+            нудејќи им на потрошувачите природни, квалитетни и автентични
+            пијалоци кои ја раскажуваат приказната за Македонија.
+          </p>
+          <p style="font-size: clamp(0.9rem, 2.2vw, 1rem)">
+            Makedon Sun е изборот за љубителите на премиум жестоки пијалоци,
+            фини вина и природни пијалоци кои бараат нешто повеќе од само
+            пијалак – тие бараат искуство.
+          </p>
+          {{ end }}
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .gradient-section-left {
+    background: linear-gradient(to right, var(--beige) 35%, transparent 30%);
+  }
+
+  /* On small screens, apply gray to the whole section */
+  @media (max-width: 767.98px) {
+    .gradient-section-left {
+      background: var(--beige);
+    }
+  }
+</style>

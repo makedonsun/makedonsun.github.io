@@ -1,17 +1,26 @@
-<section
-  class="my-5"
-  style="
-    background: linear-gradient(
-      to left,
-      var(--light-gray) 25%,
-      transparent 20%
-    );
-  "
->
+<section class="my-5 gradient-section">
   <div class="container px-3 py-5">
     <div class="row align-items-center">
       <!-- Text Column -->
-      <div class="col-12 col-md-6 mb-4 mb-md-0">
+      <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
+        {{ if eq .Site.Language.Lang "mk" }}
+        <h2 class="mb-3" style="font-size: clamp(1.5rem, 3vw, 2rem)">
+          <strong>Makedon Sun</strong> - Винарија и Дестилерија
+        </h2>
+        <p style="font-size: clamp(0.9rem, 2.2vw, 1rem)">
+          Makedon Sun е премиум бренд на компанијата Andi Kom од С. Македонија,
+          специјализиран за производство на вино, ракија, мастика и оцет од
+          јапонска јаболка. Нашата винарија и дестилерија ја спојуваат
+          традицијата со модерната технологија за да создадат природни алкохолни
+          пијалаци со уникатен вкус.
+        </p>
+        <p style="font-size: clamp(0.9rem, 2.2vw, 1rem)">
+          Ние сме единствени производители во регионот и пошироко кои создаваат
+          оцет и алкохолни пијалаци од јапонска јаболка. Овој извонреден плод,
+          познат по своите здравствени придобивки и богат вкус, е во срцето на
+          нашата приказна.
+        </p>
+        {{ else }}
         <h2 class="mb-3" style="font-size: clamp(1.5rem, 3vw, 2rem)">
           <strong>Makedon Sun</strong> - Winery & Distillery
         </h2>
@@ -28,6 +37,7 @@
           extraordinary fruit, known for its health benefits and rich flavor, is
           at the heart of our story.
         </p>
+        {{ end }}
       </div>
 
       <!-- Image Column -->
@@ -42,3 +52,15 @@
     </div>
   </div>
 </section>
+<style>
+  .gradient-section {
+    background: linear-gradient(to left, var(--beige) 25%, transparent 20%);
+  }
+
+  /* On small screens, apply gray to the whole section */
+  @media (max-width: 767.98px) {
+    .gradient-section {
+      background: var(--beige);
+    }
+  }
+</style>

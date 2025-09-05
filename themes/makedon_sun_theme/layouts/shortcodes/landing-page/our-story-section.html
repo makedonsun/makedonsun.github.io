@@ -3,23 +3,44 @@
     <div class="row align-items-center">
       <!-- Text Column -->
       <div class="col-12 col-md-6 mb-4 mb-md-0">
-        <h2 class="mb-3">OUR STORY</h2>
-        <p>
-          Rooted in Nature, Refined by Tradition<br /><br />
-          Nestled in the sun-drenched valleys of Valandovo, Makedon Sun was born
-          from a deep respect for nature, tradition, and the unique power of the
-          persimmon fruit. What began as a family passion grew into a winery and
-          distillery unlike any other — blending time-honored techniques with
-          modern standards to craft wines, rakija, mastika, and vinegar from the
-          rare Diospyros kaki (Japanese persimmon). Each bottle we produce
-          carries the story of our land: the rich soil, the golden sun, and
-          generations of knowledge passed down with care. From the vineyard to
-          your glass, Makedon Sun is a symbol of authentic Macedonian spirit,
-          quality, and innovation.
-        </p>
-        <a href="{{ "about-us/" | relURL }}" class="btn btn-dark btn-lg mt-4" role="button">
-          Read more
-        </a>
+        {{ if eq .Site.Language.Lang "en" }}
+          <h2 class="mb-3">OUR STORY</h2>
+          <p>
+            Rooted in Nature, Refined by Tradition<br /><br />
+            Nestled in the sun-drenched valleys of Valandovo, Makedon Sun was born
+            from a deep respect for nature, tradition, and the unique power of the
+            persimmon fruit. What began as a family passion grew into a winery and
+            distillery unlike any other — blending time-honored techniques with
+            modern standards to craft wines, rakija, mastika, and vinegar from the
+            rare Diospyros kaki (Japanese persimmon). Each bottle we produce
+            carries the story of our land: the rich soil, the golden sun, and
+            generations of knowledge passed down with care. From the trees to
+            your glass, Makedon Sun is a symbol of authentic Macedonian spirit,
+            quality, and innovation.
+          </p>
+          <a href="{{ "about-us/" | relURL }}" class="btn btn-dark btn-lg mt-4" role="button">
+            Read more
+          </a>
+        {{ end }}
+
+        {{ if eq .Site.Language.Lang "mk" }}
+          <h2 class="mb-3">НАШАТА ПРИКАЗНА</h2>
+          <p>
+            Вкоренето во природата, усовршено со традиција<br /><br />
+            Сместено во сончевите долини на Валандово, Makedon Sun е роден од
+            длабокото почитување кон природата, традицијата и единствената моќ на
+            јапонското јаболко. Она што започна како семејна страст прерасна
+            во винарија и дестилерија како никоја друга — комбинирајќи техники со
+            долгогодишна традиција со современи стандарди за изработка на вина, ракија,
+            мастика и оцет од реткиот Diospyros kaki (јапонско јаболко). Секое шише
+            го носи раскажувањето за нашата земја: богата почва, златно сонце и
+            генерации знаење пренесено со внимание. Од дрвото до вашиот бокал,
+            Makedon Sun е симбол на автентичниот македонски дух, квалитет и иновација.
+          </p>
+          <a href="{{ "mk/about-us/" | relURL }}" class="btn btn-dark btn-lg mt-4" role="button">
+            Прочитај повеќе
+          </a>
+        {{ end }}
       </div>
 
       <!-- Image Column -->

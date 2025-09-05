@@ -1,15 +1,39 @@
 <section class="my-5">
   <div class="container px-3 text-center">
     <div class="d-flex flex-column align-items-center justify-content-center">
+      {{ if eq .Site.Language.Lang "mk" }}
+      <!-- Macedonian version -->
+      <h3 class="mb-4">Да останеме во контакт</h3>
+      <hr
+        style="
+          width: 10vw;
+          height: 2px;
+          background-color: #000;
+          border: none;
+          opacity: 100%;
+          margin: 0.75rem auto 1.5rem auto;
+        "
+      />
+      <p class="mb-0 px-3" style="max-width: 900px; margin: 0 auto">
+        Би ни било драго да слушнеме од вас! Без разлика дали имате прашање за
+        нашите MAKEDON SUN производи, сте заинтересирани за дистрибуција или за
+        нарачки на големо или мало на нашите вина, ракија, мастика или оцет од
+        јапонска јаболка, или едноставно сакате да се поврзете со нас – слободно
+        контактирајте нè. Нашиот тим секогаш е подготвен да ви обезбеди
+        информации и поддршка. Исто така, на располагање сме за соработка на
+        домашниот и меѓународниот пазар.
+      </p>
+      {{ else }}
+      <!-- English version -->
       <h3 class="mb-4">Let's Get in Touch</h3>
       <hr
         style="
-          width: 10vw; /* 10% of viewport width, scales on mobile */
-          height: 2px; /* line thickness */
-          background-color: #000; /* black color */
+          width: 10vw;
+          height: 2px;
+          background-color: #000;
           border: none;
           opacity: 100%;
-          margin: 0.75rem auto 1.5rem auto; /* vertical spacing, centered */
+          margin: 0.75rem auto 1.5rem auto;
         "
       />
       <p class="mb-0 px-3" style="max-width: 900px; margin: 0 auto">
@@ -21,6 +45,7 @@
         you need. We are also at your disposal for collaboration on both the
         domestic and international market.
       </p>
+      {{ end }}
     </div>
   </div>
 </section>

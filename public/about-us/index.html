@@ -87,6 +87,15 @@
             </a>
           </li>
           
+          <li class="nav-item">
+            <a
+              class="nav-link body-small  regular "
+              href="../mk/"
+            >
+              MK
+            </a>
+          </li>
+          
         </ul>
       </div>
     </nav>
@@ -150,66 +159,67 @@
         >
       </span>
       
+      <span
+        class=" mx-1"
+      >
+        <a
+          href="../mk/"
+          class="text-decoration-none text-muted"
+          >MK</a
+        >
+      </span>
+      
     </div>
   </div>
 </div>
 <div id="content" class="">
 
 <div class=""><section
-  class="my-5 d-flex align-items-center align-items-md-start justify-content-end"
+  class="my-5 d-flex align-items-center justify-content-center"
   style="
-    background-image: url('/img/about-us/barrel-logo.jpg');
+    background-image: url('/img/about-us/barrel_rustic.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 700px;
     padding: 2rem;
+    color: white;
   "
 >
-  <div
-    class="p-4 text-end text-center text-md-end"
-    style="max-width: 500px; width: 100%"
-  >
-    <h1
-      class="mb-5"
-      style="
-        font-size: clamp(1.5rem, 5vw, 2.5rem);
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-      "
-    >
-      ABOUT US
-    </h1>
-    <p
-      style="
-        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
-      "
-    >
-      We are a relatively new, family-owned winery and distillery from
-      Valandovo, the warmest region in Macedonia. Our name – MAKEDON SUN – was
-      inspired by the strong and radiant Macedonian sun, a true symbol of our
-      land and heritage. Guided by tradition, passion, and innovation, we craft
-      authentic wines, spirits, and unique products made from Japanese apples,
-      grown in one of the most fertile and sun-kissed areas of the country.
-      Every drop reflects the power of nature and the spirit of Macedonia.
-    </p>
+  <div class="p-4 text-center" style="max-width: 500px; width: 100%">
+    
+    <h1 class="display-1" style="font-weight: 600">ABOUT US</h1>
+
+    
+  </div>
+</section>
+<section
+  class="d-flex my-5 py-5 flex-column align-items-center justify-content-center"
+>
+  <div class="container px-3 text-center">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      
+      <p class="mb-0 px-3" style="max-width: 700px; margin: 0 auto">
+        We are a relatively new, family-owned winery and distillery from
+        Valandovo, the warmest region in Macedonia. Our name – MAKEDON SUN – was
+        inspired by the strong and radiant Macedonian sun, a true symbol of our
+        land and heritage. Guided by tradition, passion, and innovation, we
+        craft authentic wines, spirits, and unique products made from Japanese
+        apples, grown in one of the most fertile and sun-kissed areas of the
+        country. Every drop reflects the power of nature and the spirit of
+        Macedonia.
+      </p>
+       
+    </div>
   </div>
 </section>
 
-<section
-  class="my-5"
-  style="
-    background: linear-gradient(
-      to left,
-      var(--light-gray) 25%,
-      transparent 20%
-    );
-  "
->
+<section class="my-5 gradient-section">
   <div class="container px-3 py-5">
     <div class="row align-items-center">
       
-      <div class="col-12 col-md-6 mb-4 mb-md-0">
+      <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
+        
         <h2 class="mb-3" style="font-size: clamp(1.5rem, 3vw, 2rem)">
           <strong>Makedon Sun</strong> - Winery & Distillery
         </h2>
@@ -226,6 +236,7 @@
           extraordinary fruit, known for its health benefits and rich flavor, is
           at the heart of our story.
         </p>
+        
       </div>
 
       
@@ -240,18 +251,21 @@
     </div>
   </div>
 </section>
+<style>
+  .gradient-section {
+    background: linear-gradient(to left, var(--beige) 25%, transparent 20%);
+  }
+
+   
+  @media (max-width: 767.98px) {
+    .gradient-section {
+      background: var(--beige);
+    }
+  }
+</style>
 
 <section>
-  <div
-    class="mb-5"
-    style="
-      background: linear-gradient(
-        to right,
-        var(--light-gray) 35%,
-        transparent 30%
-      );
-    "
-  >
+  <div class="mb-5 gradient-section-left">
     <div class="container px-3 py-5">
       <div class="row align-items-center">
         
@@ -265,14 +279,13 @@
         </div>
 
         
-        <div class="col-12 col-md-6 text-center text-md-end">
+        <div class="col-12 col-md-6 text-start">
+          
           <h2 class="mb-3" style="font-size: clamp(1.5rem, 3vw, 2rem)">
             Our product portfolio includes:
           </h2>
-
-          
           <ul
-            class="list-unstyled d-flex flex-column gap-2"
+            class="d-flex flex-column gap-2"
             style="font-size: clamp(0.9rem, 2.2vw, 1rem)"
           >
             <li>Premium wines with a modern and elegant design</li>
@@ -282,7 +295,6 @@
             </li>
             <li>Persimmon vinegar – the only one of its kind in Europe</li>
           </ul>
-
           <p style="font-size: clamp(0.9rem, 2.2vw, 1rem)" class="pt-4 pt-md-5">
             Our mission is to bring the power of nature in every drop, offering
             consumers natural, high-quality, and authentic beverages that tell
@@ -293,24 +305,40 @@
             and natural beverages who are looking for more than just a drink –
             they are looking for an experience.
           </p>
+           
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<style>
+  .gradient-section-left {
+    background: linear-gradient(to right, var(--beige) 35%, transparent 30%);
+  }
+
+   
+  @media (max-width: 767.98px) {
+    .gradient-section-left {
+      background: var(--beige);
+    }
+  }
+</style>
+
 <section class="my-5">
   <div class="container px-3 text-center">
     <div class="d-flex flex-column align-items-center justify-content-center">
+      
+      
       <h3 class="mb-4">Let's Get in Touch</h3>
       <hr
         style="
-          width: 10vw; /* 10% of viewport width, scales on mobile */
-          height: 2px; /* line thickness */
-          background-color: #000; /* black color */
+          width: 10vw;
+          height: 2px;
+          background-color: #000;
           border: none;
           opacity: 100%;
-          margin: 0.75rem auto 1.5rem auto; /* vertical spacing, centered */
+          margin: 0.75rem auto 1.5rem auto;
         "
       />
       <p class="mb-0 px-3" style="max-width: 900px; margin: 0 auto">
@@ -322,20 +350,19 @@
         you need. We are also at your disposal for collaboration on both the
         domestic and international market.
       </p>
+      
     </div>
   </div>
 </section>
 
 <section
   class="my-5"
-  style="
-    background: linear-gradient(to top, var(--light-gray) 70%, transparent 50%);
-  "
+  style="background: linear-gradient(to top, var(--beige) 70%, transparent 50%)"
 >
   <div class="container px-3 py-5">
     <div class="row align-items-center">
       
-      <div class="col-12 col-md-6 text-center text-md-end mb-4 mb-md-0 p-4">
+      <div class="col-12 col-md-4 text-center p-4">
         <img
           src="../img/about-us/machine.jpg"
           alt="Our Winery"
@@ -344,8 +371,17 @@
         />
       </div>
 
+      <div class="col-12 col-md-4 text-center p-4">
+        <img
+          src="../img/about-us/corridor.jpg"
+          alt="Our Winery"
+          class="img-fluid rounded shadow"
+          style="max-width: 70%; height: auto"
+        />
+      </div>
+
       
-      <div class="col-12 col-md-6 text-center text-md-start p-4">
+      <div class="col-12 col-md-4 text-center p-4">
         <img
           src="../img/about-us/abandoned-building.jpg"
           alt="Our Winery"

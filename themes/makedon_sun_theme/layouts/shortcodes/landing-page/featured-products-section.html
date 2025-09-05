@@ -10,13 +10,24 @@
 >
   <div class="container px-3 text-center">
     <div class="d-flex flex-column align-items-center justify-content-center">
+      {{ if eq .Site.Language.Lang "en" }}
       <h3 class="mb-4"><strong>FEATURED PRODUCTS</strong></h3>
       <p class="mb-0 px-3" style="max-width: 700px; margin: 0 auto">
         Crafted with Care. Rooted in Tradition. Inspired by Nature. At Makedon
         Sun, each product reflects our passion for quality and innovation. From
-        vineyard to bottle, we combine traditional craftsmanship with the
-        richness of Japanese persimmon to offer a truly unique experience.
+        tree to bottle, we combine traditional craftsmanship with the richness
+        of Japanese persimmon to offer a truly unique experience.
       </p>
+      {{ end }} {{ if eq .Site.Language.Lang "mk" }}
+      <h3 class="mb-4"><strong>ИСТАКНАТИ ПРОИЗВОДИ</strong></h3>
+      <p class="mb-0 px-3" style="max-width: 700px; margin: 0 auto">
+        Изработено со грижа. Вкоренето во традицијата. Инспирирано од природата.
+        Во Makedon Sun, секој производ ја отсликува нашата страст кон квалитет и
+        иновации. Од дрвото до шишето, комбинираме традиционално ракотворство со
+        богатството на јапонското јаболко за да понудиме навистина уникатно
+        искуство.
+      </p>
+      {{ end }}
     </div>
   </div>
 </section>

@@ -7,12 +7,20 @@
           class="row-card flex-fill d-flex flex-column justify-content-center align-items-center p-4 text-center"
         >
           <img src="{{ "img/icons/beer.png" | relURL}}" alt="icon"
-          class="img-fluid" style="max-width: 100px; height: auto;" />
+          class="img-fluid" style="max-width: 100px; height: auto;" /> {{ if eq
+          .Site.Language.Lang "en" }}
           <h5 class="mt-4">TRADITIONAL CRAFTSMANSHIP</h5>
           <p class="mt-3">
             Every drop is made using authentic recipes and artisanal methods
             passed down through generations.
           </p>
+          {{ end }} {{ if eq .Site.Language.Lang "mk" }}
+          <h5 class="mt-4">ТРАДИЦИОНАЛНО ЗАНАЕТЧИСТВО</h5>
+          <p class="mt-3">
+            Секоја капка е создадена според автентични рецепти и занаетчиски
+            методи кои се пренесуваат низ генерации.
+          </p>
+          {{ end }}
         </div>
       </div>
 
@@ -22,13 +30,22 @@
           class="row-card flex-fill d-flex flex-column justify-content-center align-items-center p-4 text-center"
         >
           <img src="{{ "img/icons/mandarin.png" | relURL}}" alt="icon"
-          class="img-fluid" style="max-width: 100px; height: auto;" />
+          class="img-fluid" style="max-width: 100px; height: auto;" /> {{ if eq
+          .Site.Language.Lang "en" }}
           <h5 class="mt-4">NATURAL ORIGIN</h5>
           <p class="mt-3">
             Crafted exclusively from Japanese persimmon — a fruit known for its
             purity, nutritional value, and natural growth in the Valandovo
             region.
           </p>
+          {{ end }} {{ if eq .Site.Language.Lang "mk" }}
+          <h5 class="mt-4">ПРИРОДНО ПОТЕКЛО</h5>
+          <p class="mt-3">
+            Создадено исклучиво од јапонско јаболко – овошје познато по својата
+            чистота, нутритивна вредност и природен раст во регионот на
+            Валандово.
+          </p>
+          {{ end }}
         </div>
       </div>
 
@@ -38,13 +55,22 @@
           class="row-card flex-fill d-flex flex-column justify-content-center align-items-center p-4 text-center"
         >
           <img src="{{ "img/icons/sun.png" | relURL}}" alt="icon"
-          class="img-fluid" style="max-width: 100px; height: auto;" />
+          class="img-fluid" style="max-width: 100px; height: auto;" /> {{ if eq
+          .Site.Language.Lang "en" }}
           <h5 class="mt-4">SYMBOL OF MACEDONIA</h5>
           <p class="mt-3">
             Born under the Macedonian sun, each product carries the essence of
             our land. The sun is our inspiration and the heart of every
             creation.
           </p>
+          {{ end }} {{ if eq .Site.Language.Lang "mk" }}
+          <h5 class="mt-4">СИМБОЛ НА МАКЕДОНИЈА</h5>
+          <p class="mt-3">
+            Родени под македонското сонце, секој наш производ ја носи суштината
+            на нашата земја. Сонцето е нашата инспирација и срцето на секоја
+            креација.
+          </p>
+          {{ end }}
         </div>
       </div>
     </div>

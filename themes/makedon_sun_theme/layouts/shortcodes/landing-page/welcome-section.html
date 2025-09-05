@@ -12,9 +12,24 @@
 >
   <div class="text-center text-white" style="max-width: 90vw">
     <h1 class="mb-3 display-1">
-      Welcome to <span style="font-weight: 600">MAKEDON SUN</span>
+      {{ if eq .Site.Language.Lang "en" }} Welcome to
+      <span style="font-weight: 600">MAKEDON SUN</span> {{ else if eq
+      .Site.Language.Lang "mk" }} Добредојдовте во
+      <span style="font-weight: 600">MAKEDON SUN</span>
+      {{ end }}
     </h1>
-    <h5 class="lined-text my-4 display-5">WINERY & DISTILERY</h5>
-    <h5 class="fs-6 fs-md-5"><em>Made from Japanese persimmon</em></h5>
+
+    <h5 class="lined-text my-4 display-5">
+      {{ if eq .Site.Language.Lang "en" }} WINERY & DISTILLERY {{ else if eq
+      .Site.Language.Lang "mk" }} ВИНАРИЈА & ДИСТИЛЕРИЈА {{ end }}
+    </h5>
+
+    <h5 class="fs-6 fs-md-5">
+      <em>
+        {{ if eq .Site.Language.Lang "en" }} Made from Japanese persimmon {{
+        else if eq .Site.Language.Lang "mk" }} Направено од јапонско јаболко {{
+        end }}
+      </em>
+    </h5>
   </div>
 </section>
