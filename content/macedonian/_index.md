@@ -1,7 +1,7 @@
 +++
 title = ''
 date = 2025-07-25T13:30:37+02:00
-draft = true
+draft = false
 cover = "/persimmon_cover.png"
 hero_title = "MAKEDON SUN"
 hero_subtitle = "Winery & Distillery from the Heart of Macedonia"

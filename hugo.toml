@@ -8,7 +8,7 @@ relativeURLs = true
   [languages.en]
     title = 'Makedon Sun'
     contentDir = 'content/english'
-    languageName = 'en'
+    languageName = 'EN'
     weight = 10
     [languages.en.menus]
       [[languages.en.menus.main]]
@@ -35,7 +35,7 @@ relativeURLs = true
   [languages.mk]
     title = 'Makedon Sun'
     contentDir = 'content/macedonian'
-    languageName = 'mk'
+    languageName = 'MK'
     weight = 10
     [languages.mk.menus]
       [[languages.mk.menus.main]]
