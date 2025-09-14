@@ -1,4 +1,4 @@
-baseURL = 'https://makedonsun.github.com/'
+baseURL = 'https://makedonsun.mk/'
 languageCode = 'en-us'
 title = 'Makedon Sun'
 theme = 'makedon_sun_theme'
@@ -8,7 +8,7 @@ relativeURLs = true
   [languages.en]
     title = 'Makedon Sun'
     contentDir = 'content/english'
-    languageName = 'EN'
+    languageName = 'en'
     weight = 10
     [languages.en.menus]
       [[languages.en.menus.main]]
